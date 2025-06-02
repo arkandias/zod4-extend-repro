@@ -3,5 +3,8 @@
     "declaration": true,
     "module": "NodeNext",
     "moduleResolution": "nodenext"
-  }
+  },
+  "include": [
+    "src"
+  ]
 }

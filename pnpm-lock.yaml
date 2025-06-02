@@ -1,35 +1,16 @@
-lockfileVersion: '6.0'
+lockfileVersion: '9.0'
 
 settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  package-a: workspace:^
-  package-b: workspace:^
-
 importers:
 
-  .: {}
-
-  packages/package-a:
-    dependencies:
-      package-b:
-        specifier: workspace:^
-        version: link:../package-b
-      zod:
-        specifier: ^3.25.23
-        version: 3.25.23
-    devDependencies:
-      typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
-
-  packages/package-b:
+  .:
     dependencies:
       zod:
-        specifier: ^3.25.23
-        version: 3.25.23
+        specifier: ^3.25.46
+        version: 3.25.46
     devDependencies:
       typescript:
         specifier: ^5.8.3
@@ -37,12 +18,16 @@ importers:
 
 packages:
 
-  /typescript@5.8.3:
+  typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
-  /zod@3.25.23:
-    resolution: {integrity: sha512-Od2bdMosahjSrSgJtakrwjMDb1zM1A3VIHCPGveZt/3/wlrTWBya2lmEh2OYe4OIu8mPTmmr0gnLHIWQXdtWBg==}
-    dev: false
+  zod@3.25.46:
+    resolution: {integrity: sha512-IqRxcHEIjqLd4LNS/zKffB3Jzg3NwqJxQQ0Ns7pdrvgGkwQsEBdEQcOHaBVqvvZArShRzI39+aMST3FBGmTrLQ==}
+
+snapshots:
+
+  typescript@5.8.3: {}
+
+  zod@3.25.46: {}

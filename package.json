@@ -1,18 +1,10 @@
 {
   "name": "zod4-type-repro",
   "type": "module",
-  "resolutions": {
-    "package-a": "workspace:^",
-    "package-b": "workspace:^"
+  "dependencies": {
+    "zod": "^3.25.46"
   },
-  "workspaces": [
-    "packages/*"
-  ],
-  "stackblitz": {
-    "installDependencies": false,
-    "startCommand": "pnpm install && pnpm typecheck"
-  },
-  "scripts": {
-    "typecheck": "pnpm -r typecheck"
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
